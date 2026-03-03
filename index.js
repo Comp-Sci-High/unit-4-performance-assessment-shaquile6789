@@ -70,7 +70,7 @@ const travelPosts = [
 
 
 // 6) Add static file middleware here
-app.use(express.static(__dirname +'/'))
+app.use(express.static(__dirname +'/public'))
 
 // 7) Set the view engine to ejs here
 app.set('view enginge', 'ejs')

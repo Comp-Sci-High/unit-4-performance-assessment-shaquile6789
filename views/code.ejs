@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderNotes | Travel Overview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Travel Posts Overview</h1>
+    <a href="/" class="back-link">← Back to Home</a>
+  </header>
+
+  <main class="card-container">
+<% for(i = 0; i<travelPosts.length; i++){ %>
+    <div class="post-card">
+      <img src=<%= travelPosts[i].image%>" alt="Paris">
+      <div class="card-content">
+        <h2><%= travelPosts[i].location%></h2>
+        <p class="date"><%= travelPosts[i].date %></p>
+        <p><%= travelPosts[i].description %></p>
+      </div>
+    </div>
+<% } %>
+    </div>
+
+  </main>
+
+</body>
+</html>
